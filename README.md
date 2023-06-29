@@ -6,7 +6,7 @@ I tried to inlclude a binary version of the nacos server in this repository, but
 The easiest way to run the nacos server is to run it in a docker container using the image `nacos/nacos-server`. More specificly, install docker/docker desktop [here](https://www.docker.com/products/docker-desktop/), then run the following command in the terminal:
  (this should pull the latest version)
 -     docker pull nacos/nacos-server
-(or check the version of the image you pulled, in case newer version than 2.0.3 is available)
+(This should run the image. Please check the version of the image you pulled in case newer version than 2.0.3 is available)
 -     docker run --name nacos-standalone -e MODE=standalone -p 8848:8848 -d nacos/nacos-server:2.0.3
 
 You can access the Nacos web interface by opening a web browser and navigating to http://localhost:8848/nacos
