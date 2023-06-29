@@ -1,12 +1,11 @@
 # Prerequisites
 - Run Nacos. 
-I tried to inlclude a binary version of the nacos server in this repository, but since that single file's size is too large, github does allow me to push the change to the online. So, I have to trouble you installing nacos yourself.
- The easiest way to run the nacos server is to run it in a docker container using the image `nacos/nacos-server`. More specificly, install docker/docker desktop [here](https://www.docker.com/products/docker-desktop/), then run the following command in the terminal:
-    docker pull nacos/nacos-server  (this should pull the latest version)
-    docker run --name nacos-standalone -e MODE=standalone -p 8848:8848 -d nacos/nacos-server:2.0.3  (or check the version of the image you pulled, in case newer version than 2.0.3 is available)
-You can access the Nacos web interface by opening a web browser and navigating to http://localhost:8848/nacos
-
-Use `centralx/nacos-server` instead of `nacos/nacos-server` if your chip is ARM. 
+- I tried to inlclude a binary version of the nacos server in this repository, but since that single file's size is too large, github does allow me to push the change to the online. So, I have to trouble you installing nacos yourself.
+-  The easiest way to run the nacos server is to run it in a docker container using the image `nacos/nacos-server`. More specificly, install docker/docker desktop [here](https://www.docker.com/products/docker-desktop/), then run the following command in the terminal:
+-     docker pull nacos/nacos-server  (this should pull the latest version)
+-     docker run --name nacos-standalone -e MODE=standalone -p 8848:8848 -d nacos/nacos-server:2.0.3  (or check the version of the image you pulled, in case newer version than 2.0.3 is available)
+- You can access the Nacos web interface by opening a web browser and navigating to http://localhost:8848/nacos
+- Use `centralx/nacos-server` instead of `nacos/nacos-server` if your chip is ARM. 
 
 # How to use the Gateway
 1. You could choose to test with our implemented testRPC server, or implement your own kitex based RPC server. 
