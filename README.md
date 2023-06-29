@@ -1,7 +1,7 @@
 # Prerequisites
 Run Nacos. 
 
-I tried to inlclude a binary version of the nacos server in this repository, but since that single file's size is too large, github does allow me to push the change to the online. So, I have to trouble you installing nacos yourself.
+I tried to inlclude a binary version of the nacos server in this repository, but the Github seems to have a 100 MB limit on the maximum file size per file and the nacos server's binary file unfortunately exceeds that limit. So, I have to trouble you guys to install the nacos server yourself.
 
 The easiest way to run the nacos server is to run it in a docker container using the image `nacos/nacos-server`. More specificly, install docker/docker desktop [here](https://www.docker.com/products/docker-desktop/), then run the following command in the terminal:
 -     docker pull nacos/nacos-server  (this should pull the latest version)
@@ -10,6 +10,8 @@ The easiest way to run the nacos server is to run it in a docker container using
 You can access the Nacos web interface by opening a web browser and navigating to http://localhost:8848/nacos
 
 Use `centralx/nacos-server` instead of `nacos/nacos-server` if your chip is ARM. 
+
+Of course, you can also choose to install nacos via its [Github release page](https://github.com/alibaba/nacos/releases)
 
 # How to use the Gateway
 1. You could choose to test with our implemented testRPC server, or implement your own kitex based RPC server. 
