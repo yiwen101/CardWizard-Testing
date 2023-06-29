@@ -1,5 +1,5 @@
 # Prerequisites
-- Run Nacos. 
+Run Nacos. 
 
 I tried to inlclude a binary version of the nacos server in this repository, but since that single file's size is too large, github does allow me to push the change to the online. So, I have to trouble you installing nacos yourself.
 
