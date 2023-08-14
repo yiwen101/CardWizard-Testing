@@ -37,7 +37,7 @@ Will get an error-free response
    ``````
 8. Go to the directory “User Interface” under the “CardWizard-Testing” folder, and run 
    ```
-   “serve -s build”
+   serve -s build
    ```
    You should be able to see something like this in the terminal:
    ![image](./images/image1.png)
